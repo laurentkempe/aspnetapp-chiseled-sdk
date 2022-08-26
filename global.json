@@ -1,0 +1,10 @@
+{
+  "sdk": {
+    "version": "7.0.100-preview.7.22377.5"
+  },
+  "scripts": {
+    "pub": "dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer",
+    "dbuild": "docker build -t my/aspnetapp-chiseled .",
+    "drun": "docker run --rm -p 8000:8080 my/aspnetapp-chiseled"
+  }
+}
